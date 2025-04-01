@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squeak</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        #container {
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>🐭 Squeak</h1>
+        <p>The social network where no one is connected yet</p>
+        
+        <textarea placeholder="Type something..."></textarea>
+        <button>Post</button>
+        
+        <div id="posts">
+            <p><i>When people actually join, their posts will appear here.</i></p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            alert("There's no one to hear your squeak yet. Check back later.");
+        });
+    </script>
+</body>
+</html>
